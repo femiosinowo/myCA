@@ -23,10 +23,7 @@ update-ca-trust extract
 ### Create CSRS
 ```
 openssl req -nodes -newkey rsa:2048 \
-
 -keyout example.key \
-
 -out example.csr \
-
 -subj "/C=US/ST=MD/L=Owings Mills/O=PAOSIN LOCAL/OU=DEVOPS/CN=example.com/emailAddress=your@email.com"
 ```
