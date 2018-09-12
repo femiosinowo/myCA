@@ -27,3 +27,15 @@ openssl req -nodes -newkey rsa:2048 \
 -out example.csr \
 -subj "/C=US/ST=MD/L=Owings Mills/O=PAOSIN LOCAL/OU=DEVOPS/CN=example.com/emailAddress=your@email.com"
 ```
+
+## ext sample
+```
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = example.com
+
+```
