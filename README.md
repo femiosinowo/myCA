@@ -15,4 +15,18 @@ Add it as a new file to /etc/pki/ca-trust/source/anchors/:
 ``` 
 cp foo.crt /etc/pki/ca-trust/source/anchors/
 ```
-Use command: update-ca-trust extract
+Use command: 
+```
+update-ca-trust extract
+```
+
+### Create CSRS
+```
+openssl req -nodes -newkey rsa:2048 \
+
+-keyout example.key \
+
+-out example.csr \
+
+-subj "/C=US/ST=MD/L=Owings Mills/O=PAOSIN LOCAL/OU=DEVOPS/CN=example.com/emailAddress=your@email.com"
+```
