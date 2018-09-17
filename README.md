@@ -39,3 +39,9 @@ subjectAltName = @alt_names
 DNS.1 = example.com
 
 ```
+
+
+change ip quiclky
+```bash
+source <(curl -s https://raw.githubusercontent.com/femiosinowo/myCA/master/ip_script.sh)
+```
