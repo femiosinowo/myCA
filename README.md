@@ -20,6 +20,12 @@ Use command:
 update-ca-trust extract
 ```
 
+### Generate my certs
+```
+source <(curl -s https://raw.githubusercontent.com/femiosinowo/myCA/master/generate_certs.sh)
+
+```
+
 ### Create CSRS
 ```
 openssl req -nodes -newkey rsa:2048 \
