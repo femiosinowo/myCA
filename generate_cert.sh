@@ -23,4 +23,4 @@ EOF
 
 
 openssl x509 -req -in $DOMAIN.csr -CA myCA.pem -CAkey myCA.key -CAcreateserial \
--out $DOMAIN.crt -days 1825 -sha256 -extfile $DOMAIN.ext
+-out $DOMAIN.crt -days 1100 -sha256 -extfile $DOMAIN.ext
